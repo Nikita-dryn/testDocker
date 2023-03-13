@@ -16,7 +16,7 @@ class Controller
     val mapOfObjects = mutableMapOf<Int,String>()
 
     @GetMapping("/")
-    fun getAll()=mapOfObjects
+    fun getAll() = mapOfObjects
 
 
     @DeleteMapping("/delete/{id}")
@@ -41,7 +41,7 @@ class Controller
     }
 
     @PutMapping("/update/{id}/{name}")
-    fun updateObject(@PathVariable id:Int,@PathVariable name:String):ResponseEntity<Void>
+    fun updateObject(@PathVariable id:Int, @PathVariable name:String):ResponseEntity<Void>
     {
         if(mapOfObjects.containsKey(id))
         {
