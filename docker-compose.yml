@@ -2,7 +2,7 @@ version: '3.9'
 services:
   app:
     container_name: application
-    image: ####
+    image: something:v1
     ports:
       - "8080:8080"
     restart: always
